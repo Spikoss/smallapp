@@ -1,0 +1,21 @@
+<!--APP定制开发  -->
+<view class="page">
+  <view class="page-top {{open ? 'page-top-show' : ''}}">
+    <view class="nav-list" data-id="{{item.id}}" data-title="{{item.name}}"  data-contentitem="{{item.content_item}}" wx:for-items="{{nav_list}}" bindtap="open_list">
+      <text>{{item.name}}</text>
+    </view>
+  </view>
+  <view class="page-bottom">
+    <image class="off-nav-list" bindtap="off_canvas" src="../../images/viewlist.png"></image>
+    <text class="off-nav-list-text">{{title}}</text>
+
+<view wx:for-items="{{content_item}}" >
+      <view class="page-bottom-content">
+        <text class='content-item-text' decode='nbsp'>&nbsp;&nbsp;&nbsp;&nbsp;{{ item.content_text}}</text>
+        <image class='content-item-images' src="{{item.content_images}}"></image>
+      </view>
+</view>
+
+    <view class="page-mask {{open ? '' : 'page-mask-hide'}}" bindtap="off_canvas"></view>
+  </view>
+</view>

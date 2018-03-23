@@ -1,0 +1,75 @@
+page,.page {
+  height: 100%;
+  font-family: 'PingFang SC', 'Helvetica Neue', Helvetica, 'Droid Sans Fallback', 'Microsoft Yahei', sans-serif;
+}
+/*左侧导航  */
+.page-top{
+  position: fixed;
+  width: 35%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #AACCFF;
+  transform: rotate(0deg) scale(1) translate(-100%,0%); 
+  -webkit-transform: rotate(0deg) scale(1) translate(-100%,0%); 
+  transition: all 0.4s ease;
+  z-index: 998;
+}
+.page-top-show{
+  transform: rotate(0deg) scale(1) translate(0%,0%); 
+  -webkit-transform: rotate(0deg) scale(1) translate(0%,0%); 
+}
+.nav-list{
+  padding: 30rpx 0 30rpx 40rpx;
+  color:#fff;
+}
+
+/*右侧展示  */
+.page-bottom{
+  height: 100%;
+  background-color: #fff;
+  position: relative;
+}
+.off-nav-list{
+  position: fixed;
+  width: 60rpx;
+  height: 50rpx;
+  top: 20rpx;
+  left:20rpx;
+}
+.off-nav-list-text{
+  position: fixed;
+  width: 100%;
+  height: 50rpx;
+  top: 20rpx;
+  left:100rpx;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0066FF
+}
+.page-bottom-content{
+  padding:100rpx 20rpx 0rpx;
+  color: #000;
+}
+.page-mask{
+  width: 100%;
+  height: 100%;
+  background-color:transparent; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.page-mask-hide{
+  display: none;
+}
+.content-item-text{
+      font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20rpx;
+}
+.content-item-images{
+ margin: 0px auto;
+}
